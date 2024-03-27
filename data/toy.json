@@ -14,5 +14,17 @@
         "labels": "['Doll', 'Battery Powered', 'Baby']",
         "createdAt": "1631031801011",
         "inStock": "true"
+    },
+    {
+        "price": null,
+        "_id": "PvDND"
+    },
+    {
+        "price": null,
+        "_id": "K0jgQ"
+    },
+    {
+        "_id": "nTJiv",
+        "price": null
     }
 ]

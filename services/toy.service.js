@@ -12,7 +12,6 @@ export const toyService = {
 
 const toys = utilService.readJsonFile('data/toy.json')
 
-
 function query(filterBy = { txt: '' }) {
     const regex = new RegExp(filterBy.txt, 'i')
     var toysToReturn = toys.filter(toy => regex.test(toy.name))
@@ -35,7 +34,7 @@ function remove(toyId) {
     return _saveToysToFile()
 }
 
-function save(toy, loggedinUser) {
+function save(toy) {
     if (toy._id) {
         const toyToUpdate = toys.find(currToy => currToy._id === toy._id)
         toyToUpdate.vendor = toy.vendor
