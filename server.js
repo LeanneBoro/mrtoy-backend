@@ -116,7 +116,7 @@ app.delete('/api/toy/:toyId', (req, res) => {
 
 })
 
-const PORT = 3030
+const PORT = process.env.PORT || 3030
 app.listen(PORT, () =>
-    console.log(`Server listening on port http://127.0.0.1:${PORT}/`)
+    loggerService.info(`Server listening on port http://127.0.0.1:${PORT}/`)
 )
